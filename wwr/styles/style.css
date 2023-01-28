@@ -15,19 +15,22 @@
     --paragraph-color-on-white: #333333; /* paragraph text on a white background */
     --paragraph-color-on-color: white; /* paragraph text on a colored background */
     --paragraph-background-color: #0F7DB8;
-    --nav-link-color: #333333;
-    --nav-background-color: #f7f7f7;
+    --nav-link-color: white;
+    --nav-background-color: #0F7DB8;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #f7f7f7;
+    --nav-hover-background-color: #0F7DB8;
 }
 
 body {
+    background-color: #fcfbfb;
+    margin: 0;
+    padding: 0;
     /*max-width: 960px;*/
     /*margin: 0 auto;*/
     /*padding: 4em;*/
-    /*font-size: 18px;*/
+    font-family: var(--heading-font);
+    font-size: 14px;
     /*text-align: center;*/
-    background-color: #fcfbfb;
 }
 
 img {
@@ -37,13 +40,14 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*font-family: var(--heading-font);*/
-    /*color: var(--headline-color-on-white);*/
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
     text-align: center;
 }
 
 h2 {
     /*text-align: center;*/
+    margin: 0;
 }
 
 hr {
@@ -67,13 +71,14 @@ img.logo {
 }
 
 p {
-    /*font-family: var(--paragraph-font);*/
+    font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    /*padding: 1em;*/
+    padding: 1em;
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    /*padding: 15px;*/
+    /*background-color: var(--nav-background-color);*/
     /*line-height: 3em;*/
     /*text-align: center;*/
     /*font-size: 1.2em;*/
@@ -82,9 +87,7 @@ nav {
 }
 
 nav a {
-    /*min-width: 120px;*/
-    /*text-decoration: none;*/
-    /*padding: 10px;*/
+    padding: 35px;
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
@@ -114,7 +117,14 @@ a {
     text-align: center;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .home-title {
+    margin-top: 10px;
+    font-family: var(--heading-font);
+    font-size: 2em;
 }
 
 #hero-img {
@@ -127,6 +137,12 @@ a {
 
 .button-box {
     text-align: center;
+    padding: 15px 30px;
+    margin: 15px;
+}
+
+.button-box a {
+    color: var(--paragraph-color-on-color);
 }
 
 main section {
@@ -134,13 +150,39 @@ main section {
 }
 
 .book, .join {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.book {
+    background-color: var(--primary-color);
+}
+
+.join {
+    background-color: var(--accent1-color);
 }
 
 .book:hover, .join:hover {
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
 .msg {
+    padding: 35px;
     background-color: var(--paragraph-background-color);
+    line-height: 1.5em;
 }
 
 .msg h2 {
@@ -148,6 +190,8 @@ main section {
 }
 
 .msg p {
+    /*font-size: .8em;*/
+    padding-bottom: 15px;
     color: var(--paragraph-color-on-color);
 }
 
@@ -156,10 +200,17 @@ main section {
 }
 
 .icon {
+    padding-top: 10px;
     width: 80px;
 }
 
+.mountains {
+    margin: 50px 0;
+}
+
 footer {
+    margin-top: 200px;
+    padding: 25px 50px;
     background-color: var(--paragraph-background-color);
 }
 
@@ -178,4 +229,8 @@ footer a {
 }
 
 footer a:hover {
+}
+
+footer .social img {
+    padding-top: 15px;
 }
