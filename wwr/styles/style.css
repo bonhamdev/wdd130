@@ -241,6 +241,7 @@ main section img {
 }
 
 .rivers-page {
+    clear: both;
     text-align: left;
     padding: 1em;
 }
