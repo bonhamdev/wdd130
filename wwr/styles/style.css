@@ -240,6 +240,30 @@ main section img {
     box-sizing: border-box;
 }
 
+.rivers-page {
+    text-align: left;
+    padding: 1em;
+}
+
+.rivers-page h2 {
+    text-align: left;
+}
+
+.rivers-page p {
+    padding: 0;
+    margin: 20px 0 20px 0;
+}
+
+.rivers-img {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 1em;
+    border: 10px solid black;
+    /*box-shadow: 5px 5px 10px #6f7364;*/
+    max-width: 350px;
+}
+
 .msg {
     padding: 35px;
     background-color: var(--paragraph-background-color);
